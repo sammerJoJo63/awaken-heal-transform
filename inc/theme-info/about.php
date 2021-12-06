@@ -207,13 +207,13 @@ $config = array(
         array(
     	    'title'     => esc_html__( 'Hide Footer Credit', 'blog-way' ),
     	    'desc'      => esc_html__( 'Option to enable/disable Powerby(Designer) credit in footer', 'blog-way' ),
-    	    'free'      => esc_html__('no','blog-way'),
+    	    'free'      => esc_html__('yes','blog-way'),
     	    'pro'       => esc_html__('yes','blog-way'),
         ),
         array(
     	    'title'     => esc_html__( 'Override Footer Credit', 'blog-way' ),
     	    'desc'      => esc_html__( 'Option to Override existing Powerby credit of footer', 'blog-way' ),
-    	    'free'      => esc_html__('no','blog-way'),
+    	    'free'      => esc_html__('yes','blog-way'),
     	    'pro'       => esc_html__('yes','blog-way'),
         ),
 	    array(

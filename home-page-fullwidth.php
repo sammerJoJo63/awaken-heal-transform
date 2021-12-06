@@ -52,7 +52,7 @@ get_header();
 	<?php
 	while ( have_posts() ) : the_post();
 		?>
-	<div id="mainHomeContent" class="container">
+	<div class="mainHomeContent container">
 		<div class="row">
 			<div class="col col-sm-12">
 		

@@ -242,14 +242,53 @@ require get_template_directory() . '/inc/main.php';
 /* Turn on wide images */
 add_theme_support('align-wide');
 
+
+
 /* CUSTOM SHORTCODES */
 
 function horizontalRuleCustomBreak() {
-    return '<div class="hrBreakContainer"><hr><div class+"logoCont"><span class="logo"></span><span class="logo"></span><span class="logo"></span></div></div>';
+    return '<div class="hrBreakContainer"><hr><div class="logocont"><span class="logo"></span><span class="logo"></span><span class="logo"></span></div></div>';
 }
 add_shortcode('hrbreak', 'horizontalRuleCustomBreak');
 
-
+function fullSpanItem($params = array()) {
+    
+        // default parameters
+        extract(shortcode_atts(array(
+            'id' => '',
+            'title' => '',
+            'name' => 'joe dulany',
+            'photo_url' => '',
+            'description' => '',
+            'link_url' => 'https://joe.dev.samcarne.com/about/'
+            //'depth' => 2
+        ), $params));
+    
+        // create sitemap
+        $html = "</div></div></div>
+        <div id='$id' class='fullSpanItem'><div class='row'>
+        <div class='col col-sm-12'>
+        <div class='fullSpanCont'>
+                <div class='WIAwrapper'>
+                    <div class='item'>
+                        <div class='polaroid'><img src='$photo_url'>
+                        <div class='caption'>$name</div>
+                    </div>
+                </div>
+            <div class='fullSpanContent'>
+                <h3>$title</h3>
+                <p>$description</p>
+                <p><a href='$link_url'>Learn More About Me Here</a></p>
+            </div>
+        </div>
+        </div></div></div>
+        <div class='mainHomeContent container'>
+        <div class='row'>
+        <div class='col col-sm-12'>";
+    
+        return $html;
+    }
+    add_shortcode('fullspanitem', 'fullSpanItem');
 
 
 
