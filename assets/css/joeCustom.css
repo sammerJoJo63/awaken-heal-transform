@@ -283,6 +283,10 @@ p.bl::first-letter {
 	content: "\21D1" !important;
 }
 
+#content:not(.homePage) {
+	margin-top: 150px;
+}
+
 @media (max-width: 782px) {
 	.wrapper {
 		flex-wrap: wrap;
@@ -300,8 +304,4 @@ p.bl::first-letter {
 	.fullSpanContent {
 		width: 100%;
 	}
-/* 	.polaroid > img {
-		width: 100% !important;
-		height: auto !important;
-	} */
 }

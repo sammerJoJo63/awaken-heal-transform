@@ -63,7 +63,10 @@
 		*
 		* @hooked blog_way_site_branding_action - 10
 		*/
-		do_action( 'blog_way_site_branding' );
+		if ( is_front_page() ) {    
+			do_action( 'blog_way_site_branding' );
+		}
+		
 
 		/**
 		* Hook - blog_way_before_content.

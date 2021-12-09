@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Full Width Page
+ * Template Name: Home Page Template Custom
  *
 * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
