@@ -75,6 +75,6 @@ do_action('blog_way_after_primary');
  *
  * @hooked blog_way_sidebar_action - 10
  */
-do_action('blog_way_sidebar');
+//do_action('blog_way_sidebar');
 
 get_footer();

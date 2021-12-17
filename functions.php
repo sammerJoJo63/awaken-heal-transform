@@ -226,6 +226,8 @@ function blog_way_scripts() {
     wp_enqueue_script('blog-way-custom', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), '20161202', true);
     
     wp_enqueue_script('blog-way-joe', get_template_directory_uri() . '/assets/js/joeCustom.js', array('jquery'), '20161202', true);
+    
+    wp_enqueue_script('blog-way-masonry', get_template_directory_uri() . '/assets/js/masonry.js', array('jquery'), '1.0', true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -292,3 +294,68 @@ function fullSpanItem($params = array()) {
 
 
 
+
+function fullSpanItemRight($params = array()) {
+    
+        // default parameters
+        extract(shortcode_atts(array(
+            'id' => '',
+            'title' => '',
+            'name' => 'joe dulany',
+            'photo_url' => '',
+            'description' => '',
+            'link_url' => 'https://joe.dev.samcarne.com/about/'
+            //'depth' => 2
+        ), $params));
+    
+        // create sitemap
+        $html = "</div></div></div>
+        <div id='$id' class='fullSpanItem rifht'><div class='row'>
+        <div class='col col-sm-12'>
+        <div class='fullSpanCont'>
+            <div class='fullSpanContent'>
+                <h2><strong>$title</strong></h2>
+                <p>$description</p>
+                <p><a href='$link_url'></a></p>
+            </div>
+            <div class='WIAwrapper'>
+                <div class='item'>
+                    <div class='polaroid'><img src='$photo_url'>
+                    <div class='caption'>$name</div>
+                </div>
+            </div>
+        </div>
+        </div></div></div>
+        <div class='mainHomeContent container'>
+        <div class='row'>
+        <div class='col col-sm-12'>";
+    
+        return $html;
+    }
+    add_shortcode('fullspanitemright', 'fullSpanItemRight');
+    
+    
+    
+    
+   function singleImg($params = array()) {
+       
+       // default parameters
+       extract(shortcode_atts(array(
+           'class' => '',
+           'label' => '',
+           'photo_url' => ''
+           //'depth' => 2
+       ), $params));
+   
+       // create sitemap
+       $html = "<div class='wrapper $class'>
+               <div class='item'>
+               <div class='polaroid'><img src='$photo_url'>
+               <div class='caption'>$label</div>
+               </div>
+               </div>";
+       
+       return $html;
+       
+       }
+       add_shortcode('singleimage', 'singleImg');

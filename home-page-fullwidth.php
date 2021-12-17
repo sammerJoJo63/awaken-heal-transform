@@ -20,35 +20,8 @@ get_header();
 	 */
 	//do_action( 'blog_way_before_primary' );
 ?>
-	<div class="container">
-		<div class="row">
-		  <div class="container">
-			<div class="row">
-				<div class="col col-sm-12">
-		  			<div class="wrapper">
-							<div class="item">
-							  <div class="polaroid"><img src="wp-content/themes/joe_dulany_theme/assets/img/polaroid1.png">
-								<div class="caption">awaken</div>
-							  </div>
-							</div>
-						  
-							<div class="item">
-							  <div class="polaroid"><img src="wp-content/themes/joe_dulany_theme/assets/img/polaroid2.png">
-								<div class="caption">heal</div>
-							  </div>
-							</div>
-						  
-							<div class="item">
-							  <div class="polaroid"><img src="wp-content/themes/joe_dulany_theme/assets/img/polaroid3.png">
-								<div class="caption">transform</div>
-							  </div>
-							</div>
-					  </div>
-				</div>
-			</div>
-			</div>
-		</div>
-	</div>
+
+
 	<?php
 	while ( have_posts() ) : the_post();
 		?>
