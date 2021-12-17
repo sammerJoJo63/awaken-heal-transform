@@ -10,7 +10,7 @@ var b;
 var cont;
 var colCount = 7; // blocks in column 
 var colWidth; 
-var margin = 50; // spacing between blocks
+var margin = 60; // spacing between blocks
 var windowWidth;
 var block;
 var padding;

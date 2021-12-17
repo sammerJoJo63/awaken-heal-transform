@@ -19,8 +19,9 @@ jQuery(document).ready(function ($) {
 	if (window.location.origin + "/blog/" == window.location.href ) {
 		$("#content").addClass("blogPage");
 		$("#content > div").removeClass("container");
-		$("#content > div > div").removeClass("container");
+		$("#content > div > dev").removeClass("container");
 		$("#content").find($(".main-content-area")).removeClass("col-sm-12");
+		$("<article id='blog' class='page type-page status-publish hentry'><div class='detail-wrap'><header class='entry-header'><h1 class='entry-title'>Musings</h1></header><div class='entry-content'></div></div></article>").prependTo($("#content").find($(".main-content-area")));
 	}
 	
 	if (window.location.origin + "/contact/" == window.location.href ) {

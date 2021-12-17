@@ -353,11 +353,19 @@ p.bl::first-letter {
 	float: left;
 	text-align: left;
 	width: 300px;
-	padding-bottom: 25px;
+	padding-bottom: 30px;
 }
 
 .blogPage #main article.post {
 	border: 1px solid #0098CA !important;
+/* 	padding: 15px; */
+}
+
+.blogPage #main article.post .detail-wrap .entry-content,
+.blogPage #main article.post .detail-wrap .entry-header .author-date,
+.blogPage #main article.post .detail-wrap .entry-title
+ {
+	margin: 15px;
 }
 
 @media (max-width: 600px) {
@@ -426,7 +434,7 @@ p.bl::first-letter {
 
 .sliderpagination {
 	position: absolute;
-	z-index: 909999999999999;
+	z-index: 1;
 	width: 1150px;
 	height: 100px;
 	padding: 10px;
@@ -437,10 +445,10 @@ p.bl::first-letter {
 	left: 0;	
 }
 
-.prev, .nxt {
+.prev, .sliderpagination .next {
 	width: 100px;
 	padding: 10px;
-	z-index: 999999999;
+	z-index: 2;
 	height: 100px;
 	position: absolute;
 }
@@ -449,11 +457,11 @@ p.bl::first-letter {
 	left: 0;
 }
 
-.nxt {
+.sliderpagination .next {
 	right: 0;
 }
 
-.prev::before, .nxt::before {
+.prev::before, .sliderpagination .next::before {
 	height: 60px;
 	width: 50px;
 	font-size: 30px;
@@ -471,7 +479,7 @@ p.bl::first-letter {
 	left:0;
 }
 
-.nxt::before {
+.sliderpagination .next::before {
 	content: "\2192";
 	right: 0;
 }
@@ -573,6 +581,10 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 	background-color: #0098CA !important;
 	left: 0 !important;
 	bottom: 4px !important;
+}
+
+article#blog {
+	padding: 0;
 }
 
 @media (max-width: 782px) {

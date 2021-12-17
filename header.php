@@ -66,14 +66,17 @@
 		if ( is_front_page() ) {    
 			do_action( 'blog_way_site_branding' );
 			?>
-			
+			<div class="sliderpagination">
+				<div class="prev"></div>
+				<div class="next"></div>
+			</div>
 			<div id="polaroidSlider">
 				
 				<div class="items1 containerWrapper">
-					<div class="sliderpagination">
+<!-- 					<div class="sliderpagination">
 						<div class="prev"></div>
-						<div class="nxt"></div>
-					</div>
+						<div class="next"></div>
+					</div> -->
 					<div class="wrapper">
 					<div class="item">
 					<div class="polaroid"><img src="wp-content/themes/joe_dulany_theme/assets/img/polaroid1.png">
@@ -97,10 +100,10 @@
 		</div>
 		</div>	
 							<div class="items2 containerWrapper">
-								<div class="sliderpagination">
+<!-- 								<div class="sliderpagination">
 									<div class="prev"></div>
-									<div class="nxt"></div>
-								</div>
+									<div class="next"></div>
+								</div> -->
 								  <div class="wrapper">
 										<div class="item">
 										  <div class="polaroid"><img src="wp-content/themes/joe_dulany_theme/assets/img/polaroid4.jpg">
@@ -122,10 +125,10 @@
 								  </div>
 							</div>
 								<div class="items3 containerWrapper">
-									<div class="sliderpagination">
+<!-- 									<div class="sliderpagination">
 										<div class="prev"></div>
-										<div class="nxt"></div>
-									</div>
+										<div class="next"></div>
+									</div> -->
 								  <div class="wrapper">
 										<div class="item">
 										  <div class="polaroid"><img src="wp-content/themes/joe_dulany_theme/assets/img/polaroid7.jpg">
