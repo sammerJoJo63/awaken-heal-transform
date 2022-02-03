@@ -30,8 +30,14 @@
 
 <?php wp_head(); ?>
 </head>
-
+<?php if ( is_front_page() ) { ?>
+	<div class="sliderpagination">
+		<div class="prev"></div>
+		<div class="next"></div>
+	</div>
+<?php } ?>
 <body <?php body_class(); ?>>
+
 <?php if(function_exists('wp_body_open')){
 	wp_body_open();
 } ?>
@@ -66,21 +72,18 @@
 		if ( is_front_page() ) {    
 			do_action( 'blog_way_site_branding' );
 			?>
-			<div class="sliderpagination">
-				<div class="prev"></div>
-				<div class="next"></div>
-			</div>
+			
 			<div id="polaroidSlider">
 				
 				<div class="items1 containerWrapper">
-<!-- 					<div class="sliderpagination">
+<!-- 				<div class="sliderpagination">
 						<div class="prev"></div>
 						<div class="next"></div>
 					</div> -->
-					<div class="wrapper">
+				<div class="wrapper">
 					<div class="item">
 					<div class="polaroid"><img src="wp-content/themes/joe_dulany_theme/assets/img/polaroid1.png">
-			]		<div class="caption">growth</div>
+					<div class="caption">growth</div>
 				</div>
 			</div>
 									  

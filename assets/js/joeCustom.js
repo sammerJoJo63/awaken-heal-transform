@@ -16,7 +16,11 @@ jQuery(document).ready(function ($) {
 		$(".main-banner").addClass("homePage");
 	}
 	
-	if (window.location.origin + "/blog/" == window.location.href ) {
+	if (window.location.origin + "/about/" == window.location.href ) {
+		$(".fullSpanCont").addClass("about");
+	}
+	
+	if (window.location.href.indexOf('blog') > -1) {
 		$("#content").addClass("blogPage");
 		$("#content > div").removeClass("container");
 		$("#content > div > dev").removeClass("container");
