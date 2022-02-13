@@ -605,6 +605,8 @@ article#blog {
 	width: 100%;
 }
 
+
+
 @media (max-width: 782px) {
 	.wrapper {
 		flex-wrap: wrap;
