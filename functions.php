@@ -1,5 +1,8 @@
 <?php
 
+require("config.php");
+
+
 /**
  * Blog_Way functions and definitions.
  *
@@ -262,7 +265,7 @@ function fullSpanItem($params = array()) {
             'name' => 'joe dulany',
             'photo_url' => '',
             'description' => '',
-            'link_url' => 'https://joe.dev.samcarne.com/about/'
+            'link_url' => ''
             //'depth' => 2
         ), $params));
     
@@ -304,7 +307,7 @@ function fullSpanItemRight($params = array()) {
             'name' => 'joe dulany',
             'photo_url' => '',
             'description' => '',
-            'link_url' => 'https://joe.dev.samcarne.com/about/'
+            'link_url' => ''
             //'depth' => 2
         ), $params));
     

@@ -1,6 +1,7 @@
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function ($) { 
 	//console.log("hello world");
-	$("header#masthead .container .row .col-sm-12").prepend("<a href='https://joe.dev.samcarne.com/'><img id='siteLogo' src='	https://joe.dev.samcarne.com/wp-content/themes/joe_dulany_theme/assets/img/joe-trans-logo-full.svg'></a>");
+	
+	$("header#masthead .container .row .col-sm-12").prepend("<a href=" + BASEURL + "><img id='siteLogo' src='" + BASEURL + "/wp-content/themes/" + THEMENAME + "/assets/img/joe-trans-logo-full.svg'></a>");
 	
 	$("header#masthead .container .row .col-sm-12").addClass("hdr");
 	

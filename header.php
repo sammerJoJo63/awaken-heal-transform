@@ -11,6 +11,7 @@
 
 ?>
 <?php
+require("config.php");
 	/**
 	 * Hook - blog_way_doctype.
 	 *
@@ -29,6 +30,10 @@
 ?>
 
 <?php wp_head(); ?>
+<script>
+	var BASEURL = '<?php Print(BASEURL) ?>';
+	var THEMENAME = '<?php Print(THEMENAME) ?>';
+</script>
 </head>
 <?php if ( is_front_page() ) { ?>
 	<div class="sliderpagination">
@@ -75,14 +80,15 @@
 			
 			<div id="polaroidSlider">
 				
-				<div class="items1 containerWrapper">
+			<div class="items1 containerWrapper">
 <!-- 				<div class="sliderpagination">
 						<div class="prev"></div>
 						<div class="next"></div>
 					</div> -->
-				<div class="wrapper">
-					<div class="item">
-					<div class="polaroid"><img src="wp-content/themes/joe_dulany_theme/assets/img/polaroid1.png">
+			<div class="wrapper">
+				<div class="item">
+					<div class="polaroid">
+					<img src="wp-content/themes/joe_dulany_theme/assets/img/polaroid1.png">
 					<div class="caption">growth</div>
 				</div>
 			</div>
