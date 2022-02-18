@@ -34,6 +34,13 @@ require("config.php");
 	var BASEURL = '<?php Print(BASEURL) ?>';
 	var THEMENAME = '<?php Print(THEMENAME) ?>';
 </script>
+<?php
+//remove once musings is live
+if ( is_home() ) { ?>
+<link src="<?php Print(BASEURL) ?>/wp-content/themes/<?php Print(THEMENAME) ?>/assets/css/construction.css" rel="stylesheet" />
+<?php
+}
+?>
 </head>
 <?php if ( is_front_page() ) { ?>
 	<div class="sliderpagination">

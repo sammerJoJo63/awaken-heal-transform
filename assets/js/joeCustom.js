@@ -20,9 +20,25 @@ jQuery(document).ready(function ($) {
 	if (window.location.origin + "/about/" == window.location.href ) {
 		$(".fullSpanCont").addClass("about");
 	}
+	if ((window.location.href.indexOf('blog') > -1))  {
+		$("#content").addClass("underConstruction");
+		
+	}
+
+	//temporary measure to come up with blog post as this goes live
+	if ((window.location.href.indexOf('blog') > -1) && $("#content").hasClass("underConstruction")) {
+		//console.log("here");
+		$("#content").addClass("blogPage"); 
+		$("#content").empty();
+		$("#content").append('<div class="inner"><div class="msg"><span class="sm"></span><span class="med"></span><span class="lg"></span><h1>Musings Soon to Come<br>Stand By!</h1><span class="lg"></span><span class="med"></span><span class="sm"></span></div></div>');
+		}
+		
+	//}	
 	
-	if (window.location.href.indexOf('blog') > -1) {
+	if ((window.location.href.indexOf('blog') > -1) && !($("#content").hasClass("underConstruction"))) {
+		
 		$("#content").addClass("blogPage");
+				
 		$("#content > div").removeClass("container");
 		$("#content > div > dev").removeClass("container");
 		$("#content").find($(".main-content-area")).removeClass("col-sm-12");
@@ -34,7 +50,7 @@ jQuery(document).ready(function ($) {
 		//$(".main-banner").addClass("homePage");
 	}
 	
-	
+
 	
 	var arr = [1, 2, 3];
 	a = 3;
