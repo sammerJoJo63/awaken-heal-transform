@@ -4,6 +4,9 @@
 
 define('BASEURL'. '', true);
 
-\define('THEMENAME', '', true);
+define('THEMENAME', '', true);
+
+define('IMGPATH',  "", true);
+
 
 ?>
