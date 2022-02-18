@@ -96,21 +96,21 @@ if ( is_home() ) { ?>
 			<div class="wrapper">
 				<div class="item">
 					<div class="polaroid">
-					<img src="<?php echo IMGPATH; ?>/assets/img/polaroid1.png">
+					<img src="<?php echo IMGPATH; ?>polaroid1.png">
 					<div class="caption">growth</div>
 				</div>
 			</div>
 									  
 			<div class="item">
 				<div class="polaroid">
-					<img src="<?php echo IMGPATH ; ?>/assets/img/polaroid2.png">
+					<img src="<?php echo IMGPATH ; ?>polaroid2.png">
 					<div class="caption">spiritual</div>
 				</div>
 			</div>
 									  
 				<div class="item">
 					<div class="polaroid">
-					<img src="<?php echo IMGPATH ; ?>/assets/img/polaroid3.png">
+					<img src="<?php echo IMGPATH ; ?>polaroid3.png">
 					<div class="caption">being myself</div>
 					</div>
 				</div>
@@ -123,19 +123,19 @@ if ( is_home() ) { ?>
 								</div> -->
 								  <div class="wrapper">
 										<div class="item">
-										  <div class="polaroid"><img src="<?php echo IMGPATH; ?>/assets/img/polaroid4.jpg">
+										  <div class="polaroid"><img src="<?php echo IMGPATH; ?>polaroid4.jpg">
 											<div class="caption">calm</div>
 										  </div>
 										</div>
 									  
 										<div class="item">
-										  <div class="polaroid"><img src="<?php echo IMGPATH; ?>/assets/img/polaroid5.jpg">
+										  <div class="polaroid"><img src="<?php echo IMGPATH; ?>polaroid5.jpg">
 											<div class="caption">peace</div>
 										  </div>
 										</div>
 									  
 										<div class="item">
-										  <div class="polaroid"><img src="<?php echo IMGPATH ; ?>/assets/img/polaroid6.jpg">
+										  <div class="polaroid"><img src="<?php echo IMGPATH ; ?>polaroid6.jpg">
 											<div class="caption">connect</div>
 										  </div>
 										</div>
@@ -148,19 +148,19 @@ if ( is_home() ) { ?>
 									</div> -->
 								  <div class="wrapper">
 										<div class="item">
-										  <div class="polaroid"><img src="<?php echo IMGPATH; ?>/assets/img/polaroid7.jpg">
+										  <div class="polaroid"><img src="<?php echo IMGPATH; ?>polaroid7.jpg">
 											<div class="caption">free</div>
 										  </div>
 										</div>
 									  
 										<div class="item">
-										  <div class="polaroid"><img src="<?php echo IMGPATH; ?>/assets/img/polaroid8.jpg">
+										  <div class="polaroid"><img src="<?php echo IMGPATH; ?>/polaroid8.jpg">
 											<div class="caption">serenity</div>
 										  </div>
 										</div>
 									  
 										<div class="item">
-										  <div class="polaroid"><img src="<?php echo IMGPATH; ?>/assets/img/polaroid9.jpg">
+										  <div class="polaroid"><img src="<?php echo IMGPATH; ?>polaroid9.jpg">
 											<div class="caption">eyes open</div>
 										  </div>
 										</div>
